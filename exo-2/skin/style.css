@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    height: 100vh;
+    background-image: url('../pictures/aurora-borealis.jpg');
+    background-size: cover;
+}
+
+.clock{
+    width: 20rem;
+    height: 20rem;
+    border: 1rem solid #ffffff;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.clock-face{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translate(-3px);
+}
+
+.hand{
+    width: 50%;
+    height: 6px;
+    background: #ffffff;
+    position: absolute;
+    top: 50%;
+    transform-origin: right;
+    transform: rotate(90deg);
+    transition: 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
